@@ -22,10 +22,10 @@ def fibonacci(n):
 def to_binary(n):
     # Stop the recursion when n is less than 2.
     if n < 2:
-        return n
+        return str(n)
 
     # Convert the remaining number and add the last binary digit.
-    return to_binary(n // 2) * 10 + n % 2
+    return to_binary(n // 2) + str(n % 2)
 def task_1():
     # Make a copy so the original data is not changed.
     data = df_bellevue.copy()
@@ -88,5 +88,3 @@ def task_4():
     )
 
     return common_professions
-
-
